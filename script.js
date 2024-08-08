@@ -78,11 +78,14 @@ function nextslide() {
 
 
 
+document.addEventListener("DOMContentLoaded", () => {
+    const toggleButton = document.querySelector(".navbar__toggle");
+    const menuLinks = document.querySelector(".navbar__links");
 
-
-
-
-
+    toggleButton.addEventListener("click", () => {
+        menuLinks.classList.toggle("active");
+    });
+});
 
 
 
