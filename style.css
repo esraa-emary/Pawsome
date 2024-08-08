@@ -49,9 +49,10 @@ header{
 .search {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     text-align: center;
 }
-
+  
 .search__input {
     font-family: inherit;
     font-size: inherit;
@@ -60,37 +61,39 @@ header{
     color: gray;
     padding: 0.7rem 1rem;
     border-radius: 30px;
+    height: 45px;
     width: 12em;
     transition: all ease-in-out .5s;
     margin-right: -2rem;
-    box-sizing: border-box; 
-    flex: 1; 
-    min-height: 2.5em; 
 }
-
+  
+.search:hover, .search:focus {
+    box-shadow: 0 0 1em #fff;
+    border-radius: 30px;
+}
+  
 .search__input:focus {
     outline: none;
     background-color: #f0eeee;
 }
-
+  
 .search__input::-webkit-input-placeholder {
     color: gray;
     font-weight: 100;
 }
-
+  
+.search__input:focus + .search__button {
+    background-color: #fff;
+}
+  
 .search__button {
     border: none;
     background-color: #f4f2f2;
-    margin-top: .5em;
-    margin-bottom: .5em;
-    min-height: 3em;
-    display: flex;
-    align-items: center; 
-    justify-content: center; 
-    border-radius: 30px; 
-    box-sizing: border-box; 
+    margin-top: .000000000000000000001em;
+    margin-bottom: 0.000000000000000000001em;
+    height: 45px;
 }
-
+  
 .search__icon {
     height: 1.3em;
     width: 1.3em;
