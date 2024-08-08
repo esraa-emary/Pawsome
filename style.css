@@ -27,23 +27,17 @@
     background-size: cover;
 }
 
+.pp {
+    display: flex;
+    align-items: center;
+}
+
 header{
     display: flex;
     align-items: center;
     padding: 1rem 0 0 0;
     margin: 0  5rem 5rem 5rem  ;
     justify-content: space-between;
-}
-
-.nav{
-    display: flex;
-    gap: 40px;
-    align-items: center;
-}
-
-.nav a{
-    text-decoration: none;
-    color: #000;
 }
 
 .search {
@@ -62,7 +56,7 @@ header{
     padding: 0.7rem 1rem;
     border-radius: 30px;
     height: 45px;
-    width: 12em;
+    width: 160px;
     transition: all ease-in-out .5s;
     margin-right: -2rem;
 }
@@ -92,6 +86,11 @@ header{
     margin-top: .000000000000000000001em;
     margin-bottom: 0.000000000000000000001em;
     height: 45px;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
 }
   
 .search__icon {
@@ -147,6 +146,42 @@ header{
     left: 0;
     opacity: 1;
 }
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.navbar__logo {
+    font-size: 1.5rem;
+}
+
+.navbar__links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar__links li {
+    margin: 0 1rem;
+}
+
+.navbar__links a {
+    color: #000;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+}
+
+.navbar__toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+} 
 
 /* ////////////////////////////////////////////////// Gog Breed & slide /////////////////////////////////// */
 
@@ -405,29 +440,6 @@ a:hover{
     width: 105px;
     height: 45px;
 }
-
-/* .slides div:hover,.slidesss div:hover{
-    width: 300px;
-    height: 400px;
-} */
-
-
-/* #slid1:hover{
-    width: 300px;
-    height: 400px;
-} */
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* ///////////////////////////////////////////////////////////////////////// */
 
@@ -857,8 +869,23 @@ a:hover{
 }
 
 @media screen and (max-width : 768px) {
-    .icon{
+    .navbar__links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 95px; 
+        right: 155px;
+        border: #fff 5px solid;
+        background: #fff;
+    }
 
+    .navbar__links.active {
+        display: flex;
+    }
+
+    .navbar__toggle {
+        display: block;
+        margin: 30px;
     }
 
     .slide{
@@ -968,8 +995,23 @@ a:hover{
 }
 
 @media screen and (max-width : 696px) {
-    .icon{
+    .navbar__links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 95px; 
+        right: 155px;
+        border: #fff 5px solid;
+        background: #fff;
+    }
 
+    .navbar__links.active {
+        display: flex;
+    }
+
+    .navbar__toggle {
+        display: block;
+        margin: 25px;
     }
 
     .slide{
@@ -1091,6 +1133,40 @@ a:hover{
 }
 
 @media screen and (max-width : 561px) {
+    .navbar__links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 95px; 
+        right: 0;
+        border: #fff 5px solid;
+        background: #fff;
+    }
+
+    .navbar__links.active {
+        display: flex;
+    }
+
+    .navbar__toggle {
+        display: block;
+        margin: 10px;
+    }
+
+    .search__input{
+        width: 210px;
+        height: 40px;
+    }
+
+    .search__button{
+        width: 20px;
+        height: 40px;
+    }
+
+    header{
+        margin: 0;
+        padding: 1rem;
+    }
+
     .photos img{
         width: 55px;
         height: 55px;
@@ -1202,6 +1278,40 @@ a:hover{
 }
 
 @media screen and (max-width : 425px) {
+    .navbar__links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 95px; 
+        right: 0;
+        border: #fff 5px solid;
+        background: #fff;
+    }
+
+    .navbar__links.active {
+        display: flex;
+    }
+
+    .navbar__toggle {
+        display: block;
+        margin: 10px;
+    }
+
+    .search__input{
+        width: 200px;
+        height: 40px;
+    }
+
+    .search__button{
+        width: 20px;
+        height: 40px;
+    }
+
+    header{
+        margin: 0;
+        padding: 1rem;
+    }
+
     .photos img{
         width: 70px;
         height: 70px;
@@ -1314,6 +1424,40 @@ a:hover{
 }
 
 @media screen and (max-width : 392px) {
+    .navbar__links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 95px; 
+        right: 0;
+        border: #fff 5px solid;
+        background: #fff;
+    }
+
+    .navbar__links.active {
+        display: flex;
+    }
+
+    .navbar__toggle {
+        display: block;
+        margin: 3px;
+    }
+
+    .search__input{
+        width: 180px;
+        height: 40px;
+    }
+
+    .search__button{
+        width: 20px;
+        height: 40px;
+    }
+
+    header{
+        margin: 0;
+        padding: 1rem;
+    }
+
     .photos img{
         width: 60px;
         height: 60px;
@@ -1422,6 +1566,40 @@ a:hover{
 }
 
 @media screen and (max-width : 348px) {
+    .navbar__links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 95px; 
+        right: 0;
+        border: #fff 5px solid;
+        background: #fff;
+    }
+
+    .navbar__links.active {
+        display: flex;
+    }
+
+    .navbar__toggle {
+        display: block;
+        margin: 2px;
+    }
+
+    .search__input{
+        width: 160px;
+        height: 40px;
+    }
+
+    .search__button{
+        width: 20px;
+        height: 40px;
+    }
+
+    header{
+        margin: 0;
+        padding: 1rem;
+    }
+
     .photos img{
         width: 50px;
         height: 50px;
@@ -1539,3 +1717,6 @@ a:hover{
         height: 100px;
     }
 }
+
+
+
