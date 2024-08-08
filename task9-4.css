@@ -1,0 +1,1538 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+    width: 12px; 
+}
+
+::-webkit-scrollbar-track {
+    background: #fff; 
+}
+
+::-webkit-scrollbar-thumb {
+    background: #000;
+    border-radius: 6px; 
+}
+
+/* ////////////////////////////////////// hero & header /////////////////////////////////////// */
+
+.hero{
+    width: 100%;
+    background: #d3c6af;
+    padding: 0 0 5rem  0;
+    position: relative;
+    background-size: cover;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    padding: 1rem 0 0 0;
+    margin: 0  5rem 5rem 5rem  ;
+    justify-content: space-between;
+}
+
+.nav{
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+.nav a{
+    text-decoration: none;
+    color: #000;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+}
+  
+.search__input {
+    font-family: inherit;
+    font-size: inherit;
+    background-color: #f4f2f2;
+    border: none;
+    color: gray;
+    padding: 0.7rem 1rem;
+    border-radius: 30px;
+    width: 12em;
+    transition: all ease-in-out .5s;
+    margin-right: -2rem;
+}
+  
+.search:hover, .search:focus {
+    box-shadow: 0 0 1em #fff;
+    border-radius: 30px;
+}
+  
+.search__input:focus {
+    outline: none;
+    background-color: #f0eeee;
+}
+  
+.search__input::-webkit-input-placeholder {
+    color: gray;
+    font-weight: 100;
+}
+  
+.search__input:focus + .search__button {
+    background-color: #fff;
+}
+  
+.search__button {
+    border: none;
+    background-color: #f4f2f2;
+    margin-top: .1em;
+}
+  
+.search__icon {
+    height: 1.3em;
+    width: 1.3em;
+    fill: gray;
+}
+
+.her{
+    display: flex;
+    flex-direction: column;
+}
+
+.her1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10rem;
+}
+
+.sp1{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+}
+
+.logo1{
+    margin: 0 0 1rem 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.her img{
+    border-radius: 15rem;
+}
+
+.logo img {
+    border-radius: 30px;
+}
+
+.container {
+    overflow: hidden; 
+}
+
+.slide-in-photo {
+    position: relative;
+    left: -100%;
+    opacity: 0;
+    transition: left 1s ease-in-out, opacity 1s ease-in-out;
+}
+
+.container.in-view .slide-in-photo {
+    left: 0;
+    opacity: 1;
+}
+
+/* ////////////////////////////////////////////////// Gog Breed & slide /////////////////////////////////// */
+
+.sp2{
+    margin: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+button{
+    width: 100px;
+    height: 40px;
+    border-radius: 15px;
+    border: #aa6b0d;
+    color: #fff;
+    background: #aa6b0d;
+    margin: 2rem 0 0 0;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+.slide{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    margin: 5rem;
+}
+
+input[type="email"] {
+    width: 150px;
+    height: 40px;
+    padding: 5px 10px;
+    border: 1px solid #fff;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2); 
+    font-size: 16px;
+    border-radius: 15px;
+    margin: 2rem 0 0 0;
+}
+
+input[type="email"]:hover,input[type="email"]:focus {
+    box-shadow: 2px 2px 12px #fff;
+    border-radius: 15px;
+    outline: none; 
+}
+
+.slide img{
+    border-radius: 15px;
+}
+
+.slide button,.slid button{
+    width: 30px;
+    height: 40px;
+    color: #000;
+    background: #fff;
+}
+
+.slidesss{
+    display: flex;
+    gap: 1rem;
+    position: relative;
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.slidesss div{
+    width: 100%;
+    display: none;
+}
+
+div.displayslide{
+    display: block;
+}
+
+/* //////////////////////////// pet product & photos ////////////////////////////////////////////// */
+
+.photos{
+    display: inline-block;
+}
+
+.photos img{
+    width: 390px;
+    height: 390px;
+}
+
+.sp3{
+    margin: 7rem 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sp3-1{
+    width: 550px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 0 5rem 0;
+}
+
+/* //////////////////////////// blog & slid & news! ////////////////////////////////////////////////// */
+
+.blog{
+    margin: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sp4{
+    display: flex;
+    background: #d3c6af;
+    padding: 5rem;
+    border: #fff solid 1px;
+    border-radius: 20px; 
+    align-items: center;
+    justify-content: center;
+    gap: 10rem;
+}
+
+.sp4-2{
+    display: flex;
+    flex-direction: column;
+}
+
+.sp4 input{
+    width: 150px;
+    height: 40px;
+    border: #fff solid 1px;
+    border-radius: 15px;
+    padding: 5px;
+    margin: 2rem 0 0 0;
+}
+
+.sp4 img{
+    border-radius: 15rem;
+}
+
+.slid{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    margin: 5rem;
+}
+
+.slidecard{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 200px;
+    min-height: fit-content;
+    background: #fff;
+    border-radius: 15px;
+    transition: 450ms;
+    border: gray solid 1px;
+}  
+
+.slideimge{
+    border-radius: 15px;
+    width: 200px;
+    height: 200px;
+} 
+
+.slidedetails{
+    padding: 1rem;
+}
+
+.slid{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+}
+
+.slides{
+    display: flex;
+    gap: 1rem;
+    position: relative;
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+    justify-content: space-between;
+    margin: 5rem;
+}
+
+.slides div{
+    display: none;
+}
+
+div.displayslide2{
+    display: block;
+}
+
+/* ///////////////////////////// footer1 & footer2 //////////////////////////////////////// */
+
+.footer1{
+    padding: 2rem 0rem;
+    display: flex;
+    color: #000;
+    margin: 0 5rem  ;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.foo1{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer1 a{
+    margin: 0 0 1rem 0;
+}
+
+.footer1 p{
+    margin: 0 0 1rem 0;
+}
+
+.foo1 a{
+    text-decoration: none;
+    color: #000;
+}
+
+.footer1 h2{
+    margin: 0 0 2rem 0;
+}
+
+.footer2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 0rem;
+    color: #000;
+    margin: 0 5rem  ;
+    justify-content: space-between;
+}
+
+.img1{
+    border-radius: 10px;
+}
+
+/* //////////////////////////////////////// Css effects ///////////////////////////// */
+
+a:hover{
+    transition: all 0.3s;
+    font-size: larger;
+    color: gray;
+}
+
+.sp1 button:hover,.sp3-1 button:hover,.sp4-2 button:hover{
+    transition: all 0.3s;
+    width: 105px;
+    height: 45px;
+}
+
+/* .slides div:hover,.slidesss div:hover{
+    width: 300px;
+    height: 400px;
+} */
+
+
+/* #slid1:hover{
+    width: 300px;
+    height: 400px;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ///////////////////////////////////////////////////////////////////////// */
+
+@media screen and (max-width : 2560px) {
+    .slide{
+        margin: 0 5rem 5rem 5rem;
+    }
+
+    .photos img{
+        width: 300px;
+        height: 300px;
+    }
+
+    .slid{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0 5rem 5rem 5rem;
+    }
+
+    .slidesss{
+        position: relative;
+        margin: auto;
+        overflow: hidden;
+    }
+    
+    .slidesss div{
+        width: 100%;
+        display: none;
+    }
+    
+    div.displayslide{
+        display: block;
+    }
+
+    .slidecard{
+        margin: 0 0 1rem 0;
+    } 
+
+    .footer1{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .sp3{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sp3-1{
+        align-items: center;
+        width: 500px;
+        margin: 0 0 2rem 0;
+    }
+
+    .sp4{
+        display: flex;
+        margin: 0;
+        padding: 5rem 1rem;
+    }
+
+    .her1{
+        display: flex;
+    }
+
+    .footer1{
+        display: flex;
+        flex-direction: row;
+        padding: 3rem 5rem ;
+        align-items: center;
+        justify-content: space-between;
+
+    }
+    
+    .footer2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sp2{
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sp4-2{
+        width: 350px;
+    }
+
+    h1{
+        font-size: xx-large ;
+    }
+
+    h3,h2{
+        font-size: x-large ;
+    }
+
+    .sp1{
+        width: 500px;
+    }
+}
+
+@media screen and (max-width : 2000px) {
+    .slide{
+        margin: 0 5rem 5rem 5rem;
+    }
+
+    .photos img{
+        width: 210px;
+        height: 210px;
+    }
+
+    .slid{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0 5rem 5rem 5rem;
+    }
+
+    .slidesss{
+        position: relative;
+        margin: auto;
+        overflow: hidden;
+    }
+    
+    .slidesss div{
+        width: 100%;
+        display: none;
+    }
+    
+    div.displayslide{
+        display: block;
+    }
+
+    .slidecard{
+        margin: 0 0 1rem 0;
+    } 
+
+    .footer1{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .sp3{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sp3-1{
+        align-items: center;
+        width: 500px;
+        margin: 0 0 2rem 0;
+    }
+
+    .sp4{
+        display: flex;
+        margin: 0;
+        padding: 5rem 0;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .her1{
+        display: flex;
+        width: 100%;
+        padding: 0;
+    }
+
+    .footer1{
+        display: flex;
+        flex-direction: row;
+        padding: 3rem 5rem ;
+        align-items: center;
+        justify-content: space-between;
+
+    }
+    
+    .footer2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sp2{
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sp4-2{
+        width: 350px;
+    }
+
+    h1{
+        font-size: xx-large ;
+    }
+
+    h3,h2{
+        font-size: x-large ;
+    }
+
+    .sp1{
+        width: 500px;
+    }
+}
+
+@media screen and (max-width : 1440px) {
+    .slide{
+        margin: 0 5rem 5rem 5rem;
+    }
+
+    .photos img{
+        width: 140px;
+        height: 140px;
+    }
+
+    .slid{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0 5rem 5rem 5rem;
+    }
+
+    .slidesss{
+        position: relative;
+        margin: auto;
+        overflow: hidden;
+    }
+    
+    .slidesss div{
+        width: 100%;
+        display: none;
+    }
+    
+    div.displayslide{
+        display: block;
+    }
+
+    .slidecard{
+        margin: 0 0 1rem 0;
+    } 
+
+    .footer1{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .sp3{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sp3-1{
+        align-items: center;
+        width: 500px;
+        margin: 0 0 2rem 0;
+    }
+
+    .sp4{
+        display: flex;
+        margin: 0;
+        gap: 5rem;
+        padding: 5rem 0;
+    }
+
+    .her1{
+        display: flex;
+        padding: 0;
+        gap: 5rem;
+    }
+
+    .footer1{
+        display: flex;
+        flex-direction: row;
+        padding: 3rem 5rem ;
+        align-items: center;
+        justify-content: space-between;
+
+    }
+    
+    .footer2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sp2{
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sp4-2{
+        width: 350px;
+    }
+
+    h1{
+        font-size: xx-large ;
+    }
+
+    h3,h2{
+        font-size: x-large ;
+    }
+
+    .sp1{
+        width: 500px;
+    }
+}
+
+@media screen and ( max-width : 1024px) {
+    .slide{
+        margin: 0 5rem 5rem 5rem;
+    }
+
+    .photos img{
+        width: 98px;
+        height: 98px;
+    }
+
+    .slid{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0 5rem 5rem 5rem;
+    }
+
+    .slidesss{
+        position: relative;
+        margin: auto;
+        overflow: hidden;
+    }
+    
+    .slidesss div{
+        width: 100%;
+        display: none;
+    }
+    
+    div.displayslide{
+        display: block;
+    }
+
+    .slidecard{
+        margin: 0 0 1rem 0;
+    } 
+
+    .footer1{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nav{
+        gap: 20px;
+    }
+
+    .sp3{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sp3-1{
+        align-items: center;
+        width: 500px;
+        margin: 0 0 2rem 0;
+    }
+
+    .sp4{
+        display: flex;
+        margin: 0;
+        padding: 5rem 1rem;
+    }
+
+    .her1{
+        display: flex;
+        padding: 0;
+    }
+
+    .footer1{
+        display: flex;
+        flex-direction: row;
+        padding: 3rem 3rem ;
+        margin: 0;
+        align-items: center;
+        justify-content: space-between;
+
+    }
+    
+    .footer2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sp2{
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sp4-2{
+        width: 360px;
+    }
+
+    h1{
+        font-size: xx-large ;
+    }
+
+    h3,h2{
+        font-size: x-large ;
+    }
+
+    .sp1{
+        width: 500px;
+    }
+}
+
+@media screen and (max-width : 768px) {
+    .icon{
+
+    }
+
+    .slide{
+        margin: 0 5rem 5rem 5rem;
+    }
+
+    .photos img{
+        width: 86px;
+        height: 86px;
+    }
+
+    .slid{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0 5rem 5rem 5rem;
+    }
+
+    .slidesss{
+        position: relative;
+        margin: auto;
+        overflow: hidden;
+    }
+    
+    .slidesss div{
+        width: 100%;
+        display: none;
+    }
+    
+    div.displayslide{
+        display: block;
+    }
+
+    .slidecard{
+        margin: 0 0 1rem 0;
+    } 
+
+    .sp3{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sp3-1{
+        align-items: center;
+        width: 500px;
+        margin: 0 0 2rem 0;
+    }
+
+    .sp4{
+        display: flex;
+        margin: 0;
+        padding: 5rem 1rem;
+        gap: 5rem;
+    }
+
+    .her1{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 0;
+    }
+
+    .footer1{
+        display: flex;
+        flex-direction: row;
+        padding: 3rem 3rem ;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .footer2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sp2{
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sp4-2{
+        width: 550px;
+    }
+
+    h1{
+        font-size: xx-large ;
+    }
+
+    h3,h2{
+        font-size: x-large ;
+    }
+
+    .sp1{
+        width: 600px;
+        margin: 0 5rem ;
+    }
+
+    .img1{
+        width: 200px;
+        height: 200px;
+    }
+}
+
+@media screen and (max-width : 696px) {
+    .icon{
+
+    }
+
+    .slide{
+        margin: 0 5rem 5rem 5rem;
+    }
+
+    .photos img{
+        width: 63px;
+        height: 63px;
+    }
+
+    div.displayslide{
+        display: block;
+    }   
+
+    .slid{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0 5rem 5rem 5rem;
+        overflow: hidden;
+    }
+
+    .slidesss{
+        position: relative;
+        margin: auto;
+        overflow: hidden;
+    }
+    
+    .slidesss div{
+        width: 100%;
+        display: none;
+    }
+    
+    div.displayslide{
+        display: block;
+    }
+
+    .slidecard{
+        margin: 0 0 1rem 0;
+    }
+
+    .sp3{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sp3-1{
+        align-items: center;
+        width: 450px;
+        margin: 0 0 2rem 0;
+    }
+
+    .sp4{
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 5rem 0;
+    }
+
+    .her1{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 0;
+    }
+
+    .footer1{
+        display: flex;
+        padding: 3rem 1rem ;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .footer2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sp2{
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sp4-2{
+        width: 550px;
+        padding: 0 8rem;
+    }
+
+    h1{
+        font-size: xx-large ;
+    }
+
+    h3,h2{
+        font-size: x-large ;
+    }
+
+    .slides{
+        margin: 0 0 5rem 0;
+    }
+
+    .sp1{
+        width: 500px;
+    }
+
+    p{
+        font-size: small;
+    }
+
+    .img1{
+        width: 150px;
+        height: 150px;
+    }
+}
+
+@media screen and (max-width : 561px) {
+    .photos img{
+        width: 55px;
+        height: 55px;
+    }
+
+    div.displayslide{
+        display: block;
+    }   
+
+    .slid{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0 5rem 5rem 5rem;
+        overflow: hidden;
+    }
+
+    .slidesss{
+        position: relative;
+        margin: auto;
+        overflow: hidden;
+    }
+    
+    .slidesss div{
+        width: 100%;
+        display: none;
+    }
+    
+    div.displayslide{
+        display: block;
+    }
+
+    .slidecard{
+        margin: 0 0 1rem 0;
+    } 
+
+    .sp3{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sp3-1{
+        align-items: center;
+        width: 350px;
+        margin: 0 0 2rem 0;
+    }
+
+    .sp4{
+        display: flex;
+        margin: 0;
+        padding: 5rem 1rem;
+    }
+
+    .her1{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 0;
+    }
+
+    .footer1{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .footer2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sp2{
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sp4-2{
+        width: 550px;
+    }
+
+    h1{
+        font-size: xx-large ;
+    }
+
+    h3,h2{
+        font-size: x-large ;
+    }
+
+    .sp1{
+        width: 400px;
+    }
+
+    p{
+        font-size: small;
+    }
+
+    .slide{
+        margin: 0 5rem 5rem 5rem;
+    }
+
+    .footer1 a{
+        font-size: smaller;
+    }
+}
+
+@media screen and (max-width : 425px) {
+    .photos img{
+        width: 70px;
+        height: 70px;
+    }
+
+    div.displayslide{
+        display: block;
+    }   
+
+    .slid{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0 0 5rem 0;
+    }
+
+    .slide{
+        margin: 0 0 5rem 0;
+    }
+
+    .slidesss{
+        position: relative;
+        margin: auto;
+        overflow: hidden;
+    }
+    
+    .slidesss div{
+        width: 100%;
+        display: none;
+    }
+    
+    div.displayslide{
+        display: block;
+    }
+
+    .slidecard{
+        margin: 0 0 1rem 0;
+    } 
+
+    .sp3{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sp3-1{
+        align-items: center;
+        width: 370px;
+        margin: 0 0 2rem 0;
+    }
+
+    .sp4{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 0;
+    }
+
+    .her1{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 0;
+    }
+
+    .footer1{
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .footer2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sp2{
+        width: 270px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sp1{
+        width:350px;
+    }
+
+    .sp4-2{
+        width: 300px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .footer1 a,.footer1 p{
+        font-size: x-small;
+    }
+
+    h1{
+        font-size: xx-large ;
+    }
+
+    h3,h2{
+        font-size: x-large ;
+    }
+
+    p{
+        font-size: small;
+    }
+}
+
+@media screen and (max-width : 392px) {
+    .photos img{
+        width: 60px;
+        height: 60px;
+    }
+
+    .slid{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0 0 5rem 0;
+    }
+
+    div.displayslide{
+        display: block;
+    } 
+
+    .slidesss{
+        position: relative;
+        margin: auto;
+        overflow: hidden;
+    }
+
+    .slide{
+        margin: 0 0 5rem 0;
+    }
+    
+    .slidesss div{
+        width: 100%;
+        display: none;
+    }
+
+    .slidecard{
+        margin: 0 0 1rem 0;
+    } 
+
+    .sp3{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sp4{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 0;
+    }
+
+    .her1{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 0;
+    }
+
+    .footer1{
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .footer2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    p{
+        font-size: small;
+    }
+
+    .sp1{
+        width: 300px ;
+    }
+
+    div.displayslide{
+        display: block;
+    }
+
+    .sp3-1{
+        width: 300px;
+        margin: 0 0 2rem 0;
+        align-items: center;
+    }
+
+    .sp2{
+        width: 200px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sp4-2{
+        width: 300px;
+        margin: 0;
+        padding: 0;
+    }
+
+    h1{
+        font-size: x-large ;
+    }
+
+    h3,h2{
+        font-size: larger ;
+    }
+}
+
+@media screen and (max-width : 348px) {
+    .photos img{
+        width: 50px;
+        height: 50px;
+    }
+
+    h1{
+        font-size: larger ;
+    }
+
+    h3,h2{
+        font-size: large ;
+    }
+
+    .slid{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0 0 5rem 0;
+    }
+
+    div.displayslide{
+        display: block;
+    } 
+
+    .slidesss{
+        position: relative;
+        margin: auto;
+        overflow: hidden;
+    }
+    
+    .slidesss div{
+        width: 100%;
+        display: none;
+    }
+
+    .slidecard{
+        margin: 0 0 1rem 0;
+    } 
+
+    .sp3{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sp4{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 0;
+    }
+
+    .her1{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 0;
+    }
+
+    .footer1{
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .footer2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer2 p{
+        font-size: x-small;
+    }
+
+    .footer1 p{
+        font-size: x-small;
+    }
+
+    .sp1{
+        width: 300px ;
+    }
+
+    div.displayslide{
+        display: block;
+    }
+
+    .sp3-1{
+        width: 250px;
+        display: flex;
+        flex-direction: column; 
+        margin: 0 0 2rem 0;
+        align-items: center;
+    }
+
+    .sp2{
+        width: 150px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sp4-2{
+        width: 250px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .slide{
+        margin: 0 0 5rem 0;
+    }
+
+    .img1{
+        width: 100px;
+        height: 100px;
+    }
+}
