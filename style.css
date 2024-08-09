@@ -1141,6 +1141,14 @@ a:hover{
         font-size: small;
     }
 
+    .footer1 a{
+        font-size: x-small;
+    }
+
+    .footer1 p{
+        font-size: x-small;
+    }
+
     .img1{
         width: 150px;
         height: 150px;
@@ -1293,7 +1301,11 @@ a:hover{
     }
 
     .footer1 a{
-        font-size: smaller;
+        font-size: x-small;
+    }
+
+    .footer1 p{
+        font-size: x-small;
     }
 }
 
@@ -1432,7 +1444,7 @@ a:hover{
     }
 
     .footer1 a,.footer1 p{
-        font-size: x-small;
+        font-size: xx-small;
     }
 
     h1{
@@ -1553,6 +1565,14 @@ a:hover{
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+
+    .footer1 p{
+        font-size: xx-small;
+    }
+
+    .footer1 a{
+        font-size: xx-small;
     }
 
     p{
@@ -1711,7 +1731,11 @@ a:hover{
     }
 
     .footer1 p{
-        font-size: x-small;
+        font-size: xx-small;
+    }
+
+    .footer1 a{
+        font-size: xx-small;
     }
 
     .sp1{
