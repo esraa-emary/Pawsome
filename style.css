@@ -29,7 +29,7 @@
 
 .pp {
     display: flex;
-    align-items: center;
+    gap: 0;
 }
 
 header{
@@ -86,6 +86,7 @@ header{
     margin-top: .000000000000000000001em;
     margin-bottom: 0.000000000000000000001em;
     height: 45px;
+    border-radius: 30px;
 }
 
 .navbar{
@@ -151,7 +152,6 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem;
 }
 
 .navbar__logo {
@@ -181,6 +181,11 @@ header{
     border: none;
     color: #fff;
     cursor: pointer;
+    margin: 0px;
+    padding: 0px;
+    width: 40px;
+    height: 60px;
+
 } 
 
 /* ////////////////////////////////////////////////// Gog Breed & slide /////////////////////////////////// */
@@ -879,6 +884,11 @@ a:hover{
         background: #fff;
     }
 
+    .pp{
+        display: flex;
+        gap: 40px;
+    }
+
     .navbar__links.active {
         display: flex;
     }
@@ -1003,6 +1013,11 @@ a:hover{
         right: 155px;
         border: #fff 5px solid;
         background: #fff;
+    }
+
+    .pp{
+        display: flex;
+        gap: 30px;
     }
 
     .navbar__links.active {
@@ -1141,6 +1156,11 @@ a:hover{
         right: 0;
         border: #fff 5px solid;
         background: #fff;
+    }
+
+    .pp{
+        display: flex;
+        gap: 20px;
     }
 
     .navbar__links.active {
@@ -1286,6 +1306,11 @@ a:hover{
         right: 0;
         border: #fff 5px solid;
         background: #fff;
+    }
+
+    .pp{
+        display: flex;
+        gap: 15px;
     }
 
     .navbar__links.active {
@@ -1434,6 +1459,11 @@ a:hover{
         background: #fff;
     }
 
+    .pp{
+        display: flex;
+        gap: 10px;
+    }
+
     .navbar__links.active {
         display: flex;
     }
@@ -1576,6 +1606,11 @@ a:hover{
         background: #fff;
     }
 
+    .pp{
+        display: flex;
+        gap: 10px;
+    }
+
     .navbar__links.active {
         display: flex;
     }
@@ -1586,7 +1621,7 @@ a:hover{
     }
 
     .search__input{
-        width: 160px;
+        width: 151px;
         height: 40px;
     }
 
