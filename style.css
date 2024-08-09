@@ -58,7 +58,7 @@ header{
     height: 45px;
     width: 160px;
     transition: all ease-in-out .5s;
-    margin-right: -2rem;
+    margin-right: -2.5rem;
 }
   
 .search:hover, .search:focus {
