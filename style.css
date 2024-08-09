@@ -45,12 +45,12 @@ header{
     align-items: center;
     justify-content: space-between;
     text-align: center;
+    padding: 0;
+    margin: 0;
 }
   
 .search__input {
-    font-family: inherit;
-    font-size: inherit;
-    background-color: #f4f2f2;
+    background-color: #fff;
     border: none;
     color: gray;
     padding: 0.7rem 1rem;
@@ -61,14 +61,9 @@ header{
     margin-right: -2.5rem;
 }
   
-.search:hover, .search:focus {
-    box-shadow: 0 0 1em #fff;
-    border-radius: 30px;
-}
-  
 .search__input:focus {
     outline: none;
-    background-color: #f0eeee;
+    background-color: #fff;
 }
   
 .search__input::-webkit-input-placeholder {
@@ -76,13 +71,9 @@ header{
     font-weight: 100;
 }
   
-.search__input:focus + .search__button {
-    background-color: #fff;
-}
-  
 .search__button {
     border: none;
-    background-color: #f4f2f2;
+    background-color: #fff;
     margin-top: .000000000000000000001em;
     margin-bottom: 0.000000000000000000001em;
     height: 45px;
@@ -172,7 +163,7 @@ header{
 .navbar__links a {
     color: #000;
     text-decoration: none;
-    padding: 0.5rem 1rem;
+    padding: 0.5rem;
 }
 
 .navbar__toggle {
@@ -185,8 +176,25 @@ header{
     padding: 0px;
     width: 40px;
     height: 60px;
-
 } 
+
+input[type="text"] {
+    width: 200px;
+    height: 40px;
+    padding: 5px 10px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2); 
+    font-size: 16px;
+    border-radius: 15px;
+    margin-right: -2.5rem;
+}
+
+.search__button {
+    width: 50px;
+    height: 40px;   
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2); 
+    font-size: 16px;
+    border-radius: 15px;
+}
 
 /* ////////////////////////////////////////////////// Gog Breed & slide /////////////////////////////////// */
 
@@ -216,23 +224,6 @@ button:hover{
     gap: 15px;
     align-items: center;
     margin: 5rem;
-}
-
-input[type="email"] {
-    width: 150px;
-    height: 40px;
-    padding: 5px 10px;
-    border: 1px solid #fff;
-    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2); 
-    font-size: 16px;
-    border-radius: 15px;
-    margin: 2rem 0 0 0;
-}
-
-input[type="email"]:hover,input[type="email"]:focus {
-    box-shadow: 2px 2px 12px #fff;
-    border-radius: 15px;
-    outline: none; 
 }
 
 .slide img{
@@ -297,6 +288,23 @@ div.displayslide{
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+input[type="email"] {
+    width: 150px;
+    height: 40px;
+    padding: 5px 10px;
+    border: 1px solid #fff;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2); 
+    font-size: 16px;
+    border-radius: 15px;
+    margin: 2rem 0 0 0;
+}
+
+input[type="email"]:hover,input[type="email"]:focus {
+    box-shadow: 2px 2px 12px #fff;
+    border-radius: 15px;
+    outline: none; 
 }
 
 .sp4{
@@ -1178,6 +1186,8 @@ a:hover{
     .navbar__toggle {
         display: block;
         margin: 10px;
+        padding: 0;
+        margin: 0;
     }
 
     .search__input{
@@ -1306,6 +1316,11 @@ a:hover{
 
     .footer1 p{
         font-size: x-small;
+    }
+
+    .img1{
+        width: 130px;
+        height: 130px;
     }
 }
 
@@ -1457,6 +1472,11 @@ a:hover{
 
     p{
         font-size: small;
+    }
+
+    .img1{
+        width: 120px;
+        height: 120px;
     }
 }
 
@@ -1612,6 +1632,11 @@ a:hover{
 
     h3,h2{
         font-size: larger ;
+    }
+
+    .img1{
+        width: 100px;
+        height: 100px;
     }
 }
 
