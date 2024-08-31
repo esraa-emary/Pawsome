@@ -14,7 +14,7 @@ function showSlides2(index) {
         slide.classList.remove("displayslide2");
     });
 
-    for (let i = 0; i < 8; i++) {
+    for (let i = 0; i < 1; i++) {
         const slideToShow = (slideIndex2 + i) % slidess2.length;
         slidess2[slideToShow].classList.add("displayslide2");
     }
@@ -54,7 +54,7 @@ function showSlides(index) {
         slide.classList.remove("displayslide");
     });
 
-    for (let i = 0; i < 8; i++) {
+    for (let i = 0; i < 1; i++) {
         const slideToShow = (slideIndex + i) % slidess.length;
         slidess[slideToShow].classList.add("displayslide");
     }
