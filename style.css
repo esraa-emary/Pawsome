@@ -141,6 +141,7 @@ header{
     list-style: none;
     margin: 0;
     padding: 0;
+    gap: 30px;
     display: flex;
 }
 
@@ -423,7 +424,6 @@ div.displayslide2{
 }
 
 .img1{
-    border-radius: 10px;
     width: 200px;
     height: 200px;
 }
@@ -433,16 +433,23 @@ div.displayslide2{
 a:hover{
     transition: all 0.3s;
     color: gray;
-    transform: scale(1.2,1.2);
+    transform: scale(1.1,1.1);
 }
 
-.sp1 button:hover,.sp3-1 button:hover,.sp4-2 button:hover{
+.sp1 button:hover,.sp3-1 button:hover,.sp4-2 button:hover,.footer2 img:hover{
     transition: all 0.3s;
-    transform: scale(1.2,1.2);
+    transform: scale(1.01,1.01);
+    box-shadow:  0  0 2rem  #000;
 }
 
 .sp4 button,.sp3 button,.her button{
     margin: 2rem 0 0 0;
+}
+
+.photos img:hover {
+    transition: all 0.3s;
+    transform: scale(1.01,1.01);
+    box-shadow:  0  0 5rem  #000;
 }
 
 /* ///////////////////////////////////////////////////////////////////////// */
