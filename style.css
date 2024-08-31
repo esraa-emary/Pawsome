@@ -32,7 +32,6 @@ p{
 /* ////////////////////////////////////// hero & header /////////////////////////////////////// */
 
 .hero{
-    width: 100%;
     background: #d3c6af;
     padding: 0 0 5rem  0;
     position: relative;
@@ -146,13 +145,13 @@ header{
 }
 
 .navbar__links li {
-    margin: 0 1rem;
+    margin: 0 0rem;
 }
 
 .navbar__links a {
     color: #000;
     text-decoration: none;
-    padding: 0.5rem;
+    padding: 0.2rem;
 }
 
 .navbar__toggle {
@@ -199,6 +198,7 @@ input[type="text"] {
     flex-direction: column;
     align-items: center;
     width: 300px;
+    justify-content: center;
 }
 
 button{
@@ -208,11 +208,11 @@ button{
     border: #aa6b0d;
     color: #fff;
     background: #aa6b0d;
-    margin: 2rem 0 0 0;
 }
 
 button:hover{
     cursor: pointer;
+    transform:scale(1.01,1.01) ;
 }
 
 .slide{
@@ -220,11 +220,17 @@ button:hover{
     gap: 15px;
     align-items: center;
     margin: 0 5rem 5rem 5rem;
+    justify-content: center;
+}
+
+.slide h3{
+    margin: 2rem 0 0 0;
 }
 
 .slide img{
     border-radius: 15px;
-    margin: 0 0 1rem 0;
+    width: 700px;
+    height: 400px;
 }
 
 .slide button,.slid button{
@@ -238,13 +244,13 @@ button:hover{
     display: flex;
     gap: 1rem;
     position: relative;
-    width: 90%;
-    margin:0 5rem;
+    margin:0 10rem;
     overflow: hidden;
+    justify-content: center;
+    align-items: center;
 }
 
 .slidesss div{
-    width: 100%;
     display: none;
 }
 
@@ -340,34 +346,33 @@ input[type="email"]:hover,input[type="email"]:focus {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 400px;
-    height: 400px;
+    width: 700px;
+    height: 470px;
     min-height: fit-content;
     background: #fff;
     border-radius: 15px;
     transition: 450ms;
-    border: gray solid 1px;
+    border: rgb(110, 108, 108) solid 3px;
 }  
 
 .slideimge{
     border-radius: 15px;
-    width: 400px;
-    height: 300px;
+    width: 700px;
+    height: 400px;
 } 
 
 .slidedetails{
-    padding: 1rem;
+    padding: 1rem 0;
 }
 
 .slides{
     display: flex;
     gap: 1rem;
     position: relative;
-    width: 90%;
     margin: auto;
     overflow: hidden;
     justify-content: space-between;
-    margin: 5rem;
+    margin: 2rem 10rem;
 }
 
 .slides div{
@@ -387,10 +392,6 @@ div.displayslide2{
     margin: 0 5rem  ;
     align-items: center;
     justify-content: space-between;
-}
-
-.foot{
-    display: none;
 }
 
 .foo1{
@@ -417,22 +418,31 @@ div.displayslide2{
     align-items: center;
 }
 
+.social{
+    margin: 1rem 0;
+}
+
 .img1{
     border-radius: 10px;
+    width: 200px;
+    height: 200px;
 }
 
 /* //////////////////////////////////////// Css effects ///////////////////////////// */
 
 a:hover{
     transition: all 0.3s;
-    font-size: xx-large;
     color: gray;
+    transform: scale(1.2,1.2);
 }
 
 .sp1 button:hover,.sp3-1 button:hover,.sp4-2 button:hover{
     transition: all 0.3s;
-    width: 105px;
-    height: 45px;
+    transform: scale(1.2,1.2);
+}
+
+.sp4 button,.sp3 button,.her button{
+    margin: 2rem 0 0 0;
 }
 
 /* ///////////////////////////////////////////////////////////////////////// */
@@ -445,38 +455,18 @@ a:hover{
 }
 
 @media screen and (max-width : 1440px) {
-    .photos img{
-        width: 140px;
-        height: 140px;
-    }
-    
-    h1 {
-        font-size: xx-large;
-    }
-    
-    h2,h3,a{
-        font-size: larger;
-    }
-    
-    p{
-        font-size: large;
-    }
-
-    a:hover{
-        font-size: x-large;
-    }
-
-    .her1,.sp4{
-        gap: 3rem;
-    }
-
-    .ss img,.slideimge{
-        width: 250px;
-        height: 200px;
-    }
-
     .slidecard{
-        width: 250px;
+        width: 500px;
+        height: 400px;
+    }
+
+    .slidecard img{
+        width: 500px;
+        height: 300px;
+    }
+
+    .slide img{
+        width: 500px;
         height: 300px;
     }
 }
@@ -487,18 +477,31 @@ a:hover{
         height: 98px;
     }
 
-    .ss img,.slideimge{
-        width: 190px;
-        height: 120px;
+    .ss img,.slidecard img{
+        width: 300px;
+        height: 200px;
+    }
+
+    .slidesss,.slides{
+        margin: 0 5rem;
     }
 
     .slidecard{
-        width: 190px;
-        height: 250px;
+        width: 300px;
+        height: 300px;
     }
 
     .footer1{
         margin: 0 2rem;
+    }
+
+    .img1{
+        width: 160px;
+        height: 160px;
+    }
+
+    a{
+        font-size: 1rem;
     }
 }
 
@@ -510,44 +513,12 @@ a:hover{
         padding: 0;
     }
 
-    .slides,.slidesss{
-        margin: 0;
-    }
-
-    .footer1{
-        display: none;
-    }
-
-    .foot img{
-        margin: 3rem 0 0 0;
-    }
-
-    .rr{
-        display: flex;
-        align-items: center;
-        gap: 100px;
-    }
-
-    .foot h2{
-        margin: 0 0 2rem 0;
-    }
-    
-    .foot a,.foot p{
-        margin: 0 0 1rem 0;
-    }
-
-    .foot{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin: 5rem 3rem;
-    }
-
     .navbar__links {
         display: none;
         flex-direction: column;
         position: absolute;
-        top: 95px; 
+        top: 0; 
+        height: 100vh;
         right:  0;
         border: #fff 5px solid;
         background: #fff;
@@ -555,30 +526,13 @@ a:hover{
     
     .navbar__links.active {
         display: flex;
+        justify-content: center;
+        gap: 20px;
     }
     
     .navbar__toggle {
         display: block;
-        margin: 30px 0;
-    }
-
-    .sp1{
-        width: 600px;
-    }
-
-    .photos img{
-        width: 86px;
-        height: 86px;
-    }
-
-    .ss img,.slideimge{
-        width: 180px;
-        height: 130px;
-    }
-
-    .slidecard{
-        width: 180px;
-        height: 240px;
+        margin: 30px 50px 30px 0;
     }
 }
 
@@ -593,13 +547,13 @@ a:hover{
     }
 
     .ss img,.slideimge{
-        width: 180px;
+        width: 230px;
         height: 130px;
     }
 
     .slidecard{
-        width: 180px;
-        height: 240px;
+        width: 230px;
+        height: 280px;
     }
 
     .slid,.slide{
@@ -619,15 +573,49 @@ a:hover{
         flex-direction: column;
     }
 
-    .foot a,.foot p{
-        font-size: small;
+    .footer1 a,.footer1 p,.footer2 p{
+        font-size: 0.6rem;
+    }
+
+    .img1{
+        width: 100px;
+        height: 100px;
     }
 }
 
 @media screen and (max-width : 561px) {
     .photos img{
-        width: 55x;
+        width: 55px;
         height: 55px;
+    }
+
+    p,a{
+        font-size: 0.7rem;
+    }
+
+    h1{
+        font-size: 1.5rem;
+    }
+
+    h3{
+        font-size: 0.7rem;
+    }
+
+    .footer2 p{
+        font-size: 0.7rem;
+    }
+
+    .footer1 h2{
+        font-size: 1rem;
+    }
+
+    .footer1{
+        margin: 0 0;
+    }
+
+    .img1{
+        width: 100px;
+        height: 100px;
     }
 
     .sp1{
@@ -635,21 +623,29 @@ a:hover{
     }
 
     header{
-        margin: 0 1rem;
+        margin: 0  0 0 1rem;
     }
 
-    .ss img,.slideimge{
-        width: 150px;
+    .navbar{
+        margin: 0 3rem 0 0 ;
+    }
+
+    .ss img,.slid img{
+        width: 170px;
         height: 100px;
     }
 
     .slidecard{
-        width: 150px;
-        height: 220px;
+        width: 170px;
+        height: 170px;
     }
 
     .sp3-1{
         width: 400px;
+    }
+
+    .slides,.slidesss{
+        margin: 0 2rem;
     }
 
     .blog{
@@ -679,16 +675,16 @@ a:hover{
         width: 350px;
     }
 
-    .rr{
-        gap: 50px;
-    }
-
     .sp4-2{
         width: 320px;
     }
 
-    p{
-        font-size: smaller;
+    .footer1 p{
+        font-size: 0.6rem;
+    }
+
+    .footer1{
+        padding: 3rem 2rem 1rem 2rem;
     }
 
     .rr{
@@ -723,13 +719,14 @@ a:hover{
         margin: 0 1rem;
     }
 
-    .pp{
-        gap: 0;
+    .footer1{
+        padding: 3rem 0.5rem 2rem 0.5rem;
     }
 
-    .foot a,.foot p{
-        font-size: xx-small;
-    }    
+    .navbar{
+        margin: 0  0 0 0 ;
+        padding: 0;
+    }
 }
 
 @media screen and (max-width : 348px) {
