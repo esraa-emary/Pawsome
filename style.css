@@ -638,7 +638,7 @@ a:hover{
     }
 
     .ss img,.slid img{
-        width: 164px;
+        width: 165px;
         height: 100px;
     }
 
@@ -694,6 +694,10 @@ a:hover{
         padding: 3rem 2rem 1rem 2rem;
     }
 
+    .ss img,.slid img{
+        width: 163px;
+    }
+
     .rr{
         gap: 40px;
     }
@@ -703,10 +707,6 @@ a:hover{
     .photos img{
         width: 60px;
         height: 60px;
-    }
-
-    .ss img,.slid img{
-        width: 162px;
     }
 
     .sp1{
