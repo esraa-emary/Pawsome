@@ -230,8 +230,8 @@ button:hover{
 
 .slide img{
     border-radius: 15px;
-    width: 700px;
-    height: 400px;
+    width: 550px;
+    height: 260px;
 }
 
 .slide button,.slid button{
@@ -347,8 +347,8 @@ input[type="email"]:hover,input[type="email"]:focus {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 700px;
-    height: 470px;
+    width: 550px;
+    height: 330px;
     min-height: fit-content;
     background: #fff;
     border-radius: 15px;
@@ -358,8 +358,8 @@ input[type="email"]:hover,input[type="email"]:focus {
 
 .slideimge{
     border-radius: 15px;
-    width: 700px;
-    height: 400px;
+    width: 545px;
+    height: 250px;
 } 
 
 .slidedetails{
@@ -463,17 +463,17 @@ a:hover{
 
 @media screen and (max-width : 1440px) {
     .slidecard{
-        width: 500px;
+        width: 450px;
         height: 400px;
     }
 
     .slidecard img{
-        width: 500px;
+        width: 445px;
         height: 300px;
     }
 
     .slide img{
-        width: 500px;
+        width: 450px;
         height: 300px;
     }
 }
@@ -485,7 +485,7 @@ a:hover{
     }
 
     .ss img,.slidecard img{
-        width: 300px;
+        width: 295px;
         height: 200px;
     }
 
@@ -553,14 +553,14 @@ a:hover{
         width: 500px;
     }
 
-    .ss img,.slideimge{
-        width: 230px;
+    .ss img,.slidecard img{
+        width: 225px;
         height: 130px;
     }
 
     .slidecard{
         width: 230px;
-        height: 280px;
+        height: 240px;
     }
 
     .slid,.slide{
@@ -638,7 +638,7 @@ a:hover{
     }
 
     .ss img,.slid img{
-        width: 170px;
+        width: 164px;
         height: 100px;
     }
 
@@ -703,6 +703,10 @@ a:hover{
     .photos img{
         width: 60px;
         height: 60px;
+    }
+
+    .ss img,.slid img{
+        width: 162px;
     }
 
     .sp1{
