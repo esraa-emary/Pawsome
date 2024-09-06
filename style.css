@@ -511,6 +511,10 @@ a:hover{
     a{
         font-size: 1rem;
     }
+
+    .her1{
+        gap : 5rem;
+    }
 }
 
 @media screen and (max-width : 768px) {
