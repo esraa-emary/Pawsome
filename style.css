@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 ::-webkit-scrollbar {
@@ -112,6 +113,10 @@ header{
     border-radius: 30px;
 }
 
+.logo h3{
+    font-size: 1.2rem;
+}
+
 .container {
     overflow: hidden; 
 }
@@ -154,6 +159,7 @@ header{
     color: #000;
     text-decoration: none;
     padding: 0.2rem;
+    font-size: 1.2rem;
 }
 
 .navbar__toggle {
@@ -230,9 +236,9 @@ button:hover{
 }
 
 .slide img{
-    border-radius: 15px;
-    width: 550px;
-    height: 260px;
+    border-radius: 20rem;
+    width: 200px;
+    height: 200px;
 }
 
 .slide button,.slid button{
@@ -246,7 +252,6 @@ button:hover{
     display: flex;
     gap: 1rem;
     position: relative;
-    margin:0 10rem;
     overflow: hidden;
     justify-content: center;
     align-items: center;
@@ -267,8 +272,8 @@ div.displayslide{
 }
 
 .photos img{
-    width: 300px;
-    height: 300px;
+    width: 150px;
+    height: 150px;
 }
 
 .sp3{
@@ -348,8 +353,8 @@ input[type="email"]:hover,input[type="email"]:focus {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 550px;
-    height: 330px;
+    width: 275px;
+    height: 300px;
     min-height: fit-content;
     background: #fff;
     border-radius: 15px;
@@ -359,8 +364,8 @@ input[type="email"]:hover,input[type="email"]:focus {
 
 .slideimge{
     border-radius: 15px;
-    width: 545px;
-    height: 250px;
+    width: 270px;
+    height: 220px;
 } 
 
 .slidedetails{
@@ -374,7 +379,6 @@ input[type="email"]:hover,input[type="email"]:focus {
     margin: auto;
     overflow: hidden;
     justify-content: space-between;
-    margin: 2rem 10rem;
 }
 
 .slides div{
@@ -425,8 +429,8 @@ div.displayslide2{
 }
 
 .img1{
-    width: 200px;
-    height: 200px;
+    width: 170px;
+    height: 170px;
 }
 
 /* //////////////////////////////////////// Css effects ///////////////////////////// */
@@ -455,52 +459,32 @@ a:hover{
 
 /* ///////////////////////////////////////////////////////////////////////// */
 
-@media screen and (max-width : 2000px) {
+@media screen and ( max-width : 1024px) {
     .photos img{
-        width: 210px;
-        height: 210px;
+        width: 100px;
+        height: 100px;
     }
-}
 
-@media screen and (max-width : 1440px) {
-    .slidecard{
-        width: 450px;
-        height: 400px;
+    .ss img{
+        width: 140px;
+        height: 140px;
     }
 
     .slidecard img{
-        width: 445px;
-        height: 300px;
-    }
-
-    .slide img{
-        width: 450px;
-        height: 300px;
-    }
-}
-
-@media screen and ( max-width : 1024px) {
-    .photos img{
-        width: 98px;
-        height: 98px;
-    }
-
-    .ss img,.slidecard img{
-        width: 295px;
-        height: 200px;
-    }
-
-    .slidesss,.slides{
-        margin: 0 5rem;
+        width: 180px;
     }
 
     .slidecard{
-        width: 300px;
+        width: 185px;
         height: 300px;
     }
 
     .footer1{
-        margin: 0 2rem;
+        margin: 0 1rem;
+    }
+
+    .footer1 a,p{
+        font-size: 0.9rem;
     }
 
     .img1{
@@ -508,12 +492,24 @@ a:hover{
         height: 160px;
     }
 
-    a{
-        font-size: 1rem;
+    .navbar__links a{
+        font-size: 0.8rem;
+    }
+
+    .navbar__links{
+        gap: 15px;
     }
 
     .her1{
-        gap : 1rem;
+        gap: 4rem;
+    }
+
+    .sp1{
+        width: 350px;
+    }
+
+    .sp1 p{
+        font-size: 0.9rem;
     }
 }
 
@@ -547,59 +543,51 @@ a:hover{
         display: block;
         margin: 30px 50px 30px 0;
     }
-}
 
-@media screen and (max-width : 696px) {
-    .photos img{
-        width: 63px;
-        height: 63px;
+    .footer1{
+        padding: 3rem 1rem;
     }
 
-    .sp1{
-        width: 500px;
+    .sp4{
+        gap: 2rem;
     }
 
-    .ss img,.slidecard img{
-        width: 225px;
-        height: 130px;
+    .ss img{
+        width: 100px;
+        height: 100px;
+    }
+
+    .ss h3{
+        font-size: 1rem;
+    }
+
+    .slidesss{
+        gap: 0.7rem;
+    }
+
+    .slidecard img{
+        width: 130px;
+        height: 100px;
     }
 
     .slidecard{
-        width: 230px;
-        height: 240px;
+        width: 135px;
+        height: 190px;
     }
+}
 
-    .slid,.slide{
-        margin:5rem 0;
-    }
-
-    .sp3-1{
-        width: 500px;
-    }
-
-    .blog{
-        width: 500px;
-        margin: 5rem 0;
+@media screen and (max-width : 597px) {
+    .photos img{
+        width: 55px;
+        height: 55px;
     }
 
     .sp4{
         flex-direction: column;
     }
 
-    .footer1 a,.footer1 p,.footer2 p{
-        font-size: 0.6rem;
-    }
-
-    .img1{
-        width: 100px;
-        height: 100px;
-    }
-}
-
-@media screen and (max-width : 561px) {
-    .photos img{
-        width: 55px;
-        height: 55px;
+    .sp4-2{
+        align-items: center;
     }
 
     p,a{
@@ -643,26 +631,35 @@ a:hover{
         margin: 0 3rem 0 0 ;
     }
 
-    .ss img,.slid img{
-        width: 164px;
-        height: 100px;
+    .ss img{
+        width: 80px;
+        height: 80px;
+    }
+
+    .slid img{
+        width: 120px;
+        height: 120px;
+    }
+
+    .slid,.slide{
+        margin: 0;
+    }
+
+    .slid{
+        margin: 0 0 5rem 0;
     }
 
     .slidecard{
-        width: 170px;
-        height: 170px;
+        width: 125px;
+        height:200px;
     }
 
     .sp3-1{
-        width: 400px;
-    }
-
-    .slides,.slidesss{
-        margin: 0 2rem;
+        width: 300px;
     }
 
     .blog{
-        width: 400px;
+        width: 300px;
     }
 
     .rr{
@@ -672,83 +669,72 @@ a:hover{
 
 @media screen and (max-width : 425px) {
     .photos img{
-        width: 70px;
-        height: 70px;
+        width: 50px;
+        height: 50px;
+    }
+
+    .photos{
+        padding: 0 0;
+        margin: 0 0;
     }
 
     .sp1{
-        width: 320px;
+        width: 250px;
+    }
+
+    .sp2{
+        width: 250px;
+        margin: 5rem 0 ;
+        padding: 0;
     }
 
     .sp3-1{
-        width: 320px;
+        width: 250px;
     }
 
     .blog{
-        width: 350px;
+        width: 200px;
+        padding: 0;
+        margin: 0 0 5rem 0;
     }
 
     .sp4-2{
         width: 320px;
     }
 
-    .footer1 p{
-        font-size: 0.6rem;
+    .footer1 p, .footer1 a,.footer2 p{
+        font-size: 0.5rem;
     }
 
     .footer1{
-        padding: 3rem 2rem 1rem 2rem;
+        padding: 3rem 1rem 1rem 1rem;
     }
 
     .rr{
         gap: 40px;
     }
-}
 
-@media screen and (max-width : 392px) {
-    .photos img{
+    .ss img{
         width: 60px;
         height: 60px;
     }
 
-    .ss img,.slid img{
-        width: 162px;
+    .slid img{
+        width: 85px;
+        height: 85px;
     }
 
-    .sp1{
-        width: 300px;
-    }
-
-    .sp3-1{
-        width: 300px;
-    }
-
-    .blog{
-        width: 300px;
-    }
-
-    .sp2{
-        width: 300px;
-        margin: 5rem 0;
+    .slidecard{
+        width: 90px;
+        height:200px;
     }
 
     header{
         margin: 0 1rem;
     }
 
-    .footer1{
-        padding: 3rem 0.5rem 2rem 0.5rem;
-    }
-
     .navbar{
         margin: 0  0 0 0 ;
         padding: 0;
-    }
-}
-
-@media screen and (max-width : 348px) {
-    .photos img{
-        width: 50px;
-        height: 50px;
     }
 }
