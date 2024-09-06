@@ -5,6 +5,7 @@ document.addEventListener("DOMContentLoaded", initializeSlider2);
 function initializeSlider2() {
     if (slidess2.length > 0) {
         showSlides2(slideIndex2);
+        setInterval(nextslide2, 3000); 
     }
 }
 
@@ -14,18 +15,10 @@ function showSlides2(index) {
         slide.classList.remove("displayslide2");
     });
 
-    for (let i = 0; i < 1; i++) {
+    for (let i = 0; i < 3; i++) {
         const slideToShow = (slideIndex2 + i) % slidess2.length;
         slidess2[slideToShow].classList.add("displayslide2");
     }
-}
-
-function prevslide2() {
-    slideIndex2 --;
-    if (slideIndex2 < 0) {
-        slideIndex2 = slidess2.length-1;
-    }
-    showSlides2(slideIndex2);
 }
 
 function nextslide2() {
@@ -45,6 +38,7 @@ document.addEventListener("DOMContentLoaded", initializeSlider);
 function initializeSlider() {
     if (slidess.length > 0) {
         showSlides(slideIndex);
+        setInterval(nextslide, 3000); 
     }
 }
 
@@ -54,18 +48,10 @@ function showSlides(index) {
         slide.classList.remove("displayslide");
     });
 
-    for (let i = 0; i < 1; i++) {
+    for (let i = 0; i < 4; i++) {
         const slideToShow = (slideIndex + i) % slidess.length;
         slidess[slideToShow].classList.add("displayslide");
     }
-}
-
-function prevslide() {
-    slideIndex --;
-    if (slideIndex < 0) {
-        slideIndex = slidess.length-1;
-    }
-    showSlides(slideIndex);
 }
 
 function nextslide() {
@@ -86,6 +72,3 @@ document.addEventListener("DOMContentLoaded", () => {
         menuLinks.classList.toggle("active");
     });
 });
-
-
-
