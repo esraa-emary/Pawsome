@@ -18,6 +18,10 @@
     border-radius: 6px; 
 }
 
+body{
+    font-family: 'Poppins',sans-serif;
+}
+
 h1 {
     font-size: xx-large;
 }
@@ -533,6 +537,7 @@ a:hover{
     }
     
     .navbar__links.active {
+        z-index: 10;
         position: fixed;
         display: flex;
         justify-content: center;
